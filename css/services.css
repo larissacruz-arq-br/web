@@ -1,0 +1,60 @@
+.services {
+    background-color: var(--white);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.services-background {
+    background-image: url(../img/backgrounds/services-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 100%;
+}
+
+.services-area {
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-text p {
+    max-inline-size: 600px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .services {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .services-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-background {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .services-area {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .services-text {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+}
