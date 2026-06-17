@@ -1,0 +1,89 @@
+.esquina {
+    background-color: var(--white);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.esquina-background {
+    background-image: url(../img/backgrounds/esquina-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 100%;
+}
+
+.esquina-area {
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquina-content {
+    width: 70%;
+}
+
+.esquina-text {
+    color: var(--black);
+}
+
+.esquina-text h1 {
+    text-transform: uppercase;
+}
+
+.esquina-text p {
+    max-inline-size: 600px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .esquina {
+        height: auto;
+    }
+
+    .esquina-background {
+        width: 100vw;
+        height: 75px;
+        position: absolute;
+    }
+
+    .esquina-background::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(10, 9, 8, 0.6) 0%, rgba(10, 9, 8, 0.8) 100%);
+        z-index: 1;
+    }
+
+    .esquina-area {
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .esquina-content {
+        width: 85%;
+        margin: 0;
+        z-index: 2;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .esquina-text h1 {
+        color: var(--white);
+    }
+
+    .esquina-text p {
+        color: var(--black);
+        max-inline-size: 100%;
+    }
+}
