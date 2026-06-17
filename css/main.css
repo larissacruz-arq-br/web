@@ -1,0 +1,86 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --black: #06070e;
+    --beige: #a39171;
+
+    --transition: 0.3s;
+    --navbar-transition: 0.75s;
+}
+
+h1,
+a {
+    font-family: "Joan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+p,
+span {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+span {
+    font-size: 14pt;
+    text-align: justify;
+}
+
+.arbo-text h1,
+.esquina-text h1,
+.tucuna-text h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.cta-button a {
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10pt;
+    padding: 12px 50px;
+    display: flex;
+    transition: var(--transition);
+    max-width: fit-content;
+
+    &:hover {
+        background-color: var(--beige);
+    }
+}
+
+mark {
+    background-color: var(--beige);
+    color: var(--white);
+    padding: 3px 0;
+}
+
+::selection {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.nav-offset-overlay {
+    background-color: var(--black);
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transition: all var(--transition);
+    visibility: hidden;
+}
