@@ -1,0 +1,27 @@
+{
+  "name": "larissacruz-arq-br",
+  "version": "1.0.0",
+  "description": "Larissa Rocha - Arquiteta e Urbanista Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larissacruz-arq-br/web.git"
+  },
+  "keywords": [
+    "architecture",
+    "portfolio",
+    "web"
+  ],
+  "author": "Larissa Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larissacruz-arq-br/web/issues"
+  },
+  "homepage": "https://github.com/larissacruz-arq-br/web#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
