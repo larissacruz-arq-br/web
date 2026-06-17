@@ -1,0 +1,87 @@
+.tucuna {
+    background-color: var(--beige);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.tucuna-background {
+    background-image: url(../img/backgrounds/tucuna-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 100%;
+}
+
+.tucuna-area {
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tucuna-content {
+    margin-left: 250px;
+}
+
+.tucuna-text {
+    color: var(--white);
+}
+
+.tucuna-text h1 {
+    text-transform: uppercase;
+}
+
+.tucuna-text p {
+    max-inline-size: 600px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.tucuna-button a {
+    background-color: var(--white);
+    color: var(--black);
+
+    &:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .tucuna-background {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .tucuna-background::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(10, 9, 8, 0.6) 0%, rgba(10, 9, 8, 0.8) 100%);
+        z-index: 1;
+    }
+
+    .tucuna-area {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tucuna-content {
+        width: 85%;
+        margin: 0;
+        z-index: 2;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tucuna-text p {
+        max-inline-size: 100%;
+    }
+}

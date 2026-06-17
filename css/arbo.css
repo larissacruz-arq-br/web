@@ -1,0 +1,87 @@
+.arbo {
+    background-color: var(--beige);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.arbo-background {
+    background-image: url(../img/backgrounds/arbo-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 100%;
+}
+
+.arbo-area {
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arbo-content {
+    margin-left: 250px;
+}
+
+.arbo-text {
+    color: var(--white);
+}
+
+.arbo-text h1 {
+    text-transform: uppercase;
+}
+
+.arbo-text p {
+    max-inline-size: 600px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.arbo-button a {
+    background-color: var(--white);
+    color: var(--black);
+
+    &:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .arbo-background {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .arbo-background::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(10, 9, 8, 0.6) 0%, rgba(10, 9, 8, 0.8) 100%);
+        z-index: 1;
+    }
+
+    .arbo-area {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arbo-content {
+        width: 85%;
+        margin: 0;
+        z-index: 2;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arbo-text p {
+        max-inline-size: 100%;
+    }
+}

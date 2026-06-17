@@ -1,0 +1,121 @@
+.home {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 9, 8, 0.6) 0%, rgba(10, 9, 8, 0.8) 100%);
+    z-index: 1;
+}
+
+.home-content {
+    color: var(--white);
+    z-index: 2;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 40pt;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.home-content p {
+    max-inline-size: 600px;
+    margin: 5px 0 0 0;
+}
+
+.showcase {
+    background-color: var(--white);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-block {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-block h1 {
+    width: 1700px;
+}
+
+.showcase-images {
+    width: 1750px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.showcase-images img {
+    width: auto;
+    height: 100%;
+}
+
+.showcase-images video {
+    height: 100%;
+}
+
+.arbo-bg {
+    background-image: url(../img/arbo/background.png);
+}
+
+.esquina-bg {
+    background-image: url(../img/esquina/background.png);
+}
+
+.tucuna-bg {
+    background-image: url(../img/tucuna/background.png);
+}
+
+@media screen and (max-width: 1000px) {
+    .home-content {
+        width: 85%;
+    }
+
+    .home-content h1,
+    p {
+        text-align: center;
+    }
+
+    .showcase-block {
+        height: auto;
+        margin: 30px 0;
+    }
+
+    .showcase-block h1 {
+        width: 70%;
+        font-size: 20pt;
+    }
+
+    .showcase-images {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 30px;
+    }
+
+    .showcase-images img,
+    video {
+        height: 400px;
+        width: 300px;
+    }
+}
